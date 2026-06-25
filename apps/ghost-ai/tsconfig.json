@@ -46,9 +46,6 @@
   "references": [
     {
       "path": "../../libs/shadcn-util"
-    },
-    {
-      "path": "../../libs/shadcn"
     }
   ]
 }
