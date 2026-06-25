@@ -1,1 +1,62 @@
 @import '../../../../libs/shadcn-util/src/global.css';
+
+/* Dark-only theme — no light mode. Overrides shadcn-util's light defaults with
+   the bespoke palette from context/ui-context.md. Values are hex-equivalent to
+   the HSL triplets below (tailwind.config.js wraps shadcn tokens as hsl(var(--x))). */
+:root {
+  --background: 240 5.9% 3.3%;
+  --foreground: 240 15.4% 94.9%;
+  --card: 240 8.1% 7.3%;
+  --card-foreground: 240 15.4% 94.9%;
+  --popover: 240 7.7% 10.2%;
+  --popover-foreground: 240 15.4% 94.9%;
+  --primary: 183 100% 41.6%;
+  --primary-foreground: 240 5.9% 3.3%;
+  --secondary: 240 7.7% 10.2%;
+  --secondary-foreground: 240 15.4% 94.9%;
+  --muted: 240 7.7% 12.7%;
+  --muted-foreground: 240 6.7% 53.3%;
+  --accent: 240 7.7% 12.7%;
+  --accent-foreground: 240 15.4% 94.9%;
+  --destructive: 359 100% 65.1%;
+  --border: 240 6.7% 17.6%;
+  --input: 240 6.7% 17.6%;
+  --ring: 183 100% 41.6%;
+  --radius: 0.75rem;
+
+  --bg-base: #080809;
+  --bg-surface: #111114;
+  --bg-elevated: #18181c;
+  --bg-subtle: #1e1e23;
+  --border-default: #2a2a30;
+  --border-subtle: #3a3a42;
+  --text-primary: #f0f0f4;
+  --text-secondary: #c0c0cc;
+  --text-muted: #808090;
+  --text-faint: #505060;
+  --accent-primary: #00c8d4;
+  --accent-primary-dim: rgba(0, 200, 212, 0.12);
+  --accent-ai: #6457f9;
+  --accent-ai-text: #8b82ff;
+  --state-error: #ff4d4f;
+  --state-success: #34d399;
+  --state-warning: #fbbf24;
+
+  --chart-1: #00c8d4;
+  --chart-2: #6457f9;
+  --chart-3: #34d399;
+  --chart-4: #fbbf24;
+  --chart-5: #ff4d4f;
+  --sidebar: #111114;
+  --sidebar-foreground: #f0f0f4;
+  --sidebar-primary: #00c8d4;
+  --sidebar-primary-foreground: #080809;
+  --sidebar-accent: #1e1e23;
+  --sidebar-accent-foreground: #f0f0f4;
+  --sidebar-border: #2a2a30;
+  --sidebar-ring: #00c8d4;
+}
+
+html {
+  @apply font-sans;
+}

@@ -34,7 +34,10 @@ export function AppDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
-        className={cn('rounded-3xl border-border bg-background', className)}
+        className={cn(
+          'rounded-3xl border-surface-border bg-elevated text-copy-primary',
+          className,
+        )}
       >
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
