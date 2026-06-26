@@ -1,25 +1,8 @@
-'use client';
+import { auth } from '@clerk/nextjs/server';
+import { redirect } from 'next/navigation';
 
-import { useState } from 'react';
+export default async function Index() {
+  const { userId } = await auth();
 
-import { EditorNavbar, ProjectSidebar } from '@org/ghost-ai-components';
-
-export default function Index() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  return (
-    <div className="relative flex min-h-screen flex-col">
-      <EditorNavbar
-        isSidebarOpen={isSidebarOpen}
-        onToggleSidebar={() => setIsSidebarOpen((open) => !open)}
-      />
-      <ProjectSidebar
-        isOpen={isSidebarOpen}
-        onClose={() => setIsSidebarOpen(false)}
-      />
-      <main className="flex flex-1 items-center justify-center">
-        <div className="text-4xl font-bold">Ghost AI</div>
-      </main>
-    </div>
-  );
+  redirect(userId ? '/editor' : '/sign-in');
 }

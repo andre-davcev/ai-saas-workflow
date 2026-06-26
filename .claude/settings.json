@@ -1,4 +1,30 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(npx nx *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(list\\(d.get\\('targets',{}\\).keys\\(\\)\\)\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(npx next *)",
+      "Bash(npx jest *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{redirect_url}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"sign-in: %{http_code}\\\\n\" http://localhost:3000/sign-in)",
+      "Bash(curl -s -o /dev/null -w \"editor: %{http_code} %{redirect_url}\\\\n\" http://localhost:3000/editor)",
+      "Bash(curl -sv http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(npx playwright *)",
+      "Bash(node /private/tmp/claude-501/-Users-andredavcev-Documents-Code-ai-saas-workflow/58422b5f-9acd-4029-97ab-52d79629f251/scratchpad/screenshot.mjs)",
+      "Bash(node screenshot.mjs)",
+      "Bash(node /Users/andredavcev/Documents/Code/ai-saas-workflow/screenshot.mjs)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"nx dev ghost-ai\")",
+      "Bash(git check-ignore *)"
+    ]
+  },
+  "enabledPlugins": {
+    "nx@nx-claude-plugins": true
+  },
   "extraKnownMarketplaces": {
     "nx-claude-plugins": {
       "source": {
@@ -7,12 +33,11 @@
       }
     }
   },
-  "enabledPlugins": {
-    "nx@nx-claude-plugins": true
-  },
   "sandbox": {
     "network": {
-      "allowedDomains": ["www.google-analytics.com"]
+      "allowedDomains": [
+        "www.google-analytics.com"
+      ]
     }
   }
 }
