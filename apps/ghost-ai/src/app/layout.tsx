@@ -2,6 +2,17 @@ import './global.css';
 
 import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from '@clerk/ui/themes';
+import { Geist, Geist_Mono } from 'next/font/google';
+
+const geistSans = Geist({
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+});
+
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: 'Welcome to ghost-ai',
@@ -14,8 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body>
+    <html
+      lang="en"
+      className={`dark ${geistSans.variable} ${geistMono.variable}`}
+    >
+      <body className="antialiased">
         <ClerkProvider
           appearance={{
             theme: dark,

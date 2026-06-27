@@ -11,6 +11,7 @@
 
 import { createGlobPatternsForDependencies } from '@nx/react/tailwind';
 import { join } from 'node:path';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 const TailwindConfig = require('../../libs/shadcn-util/tailwind.config.js');
 
@@ -24,4 +25,14 @@ module.exports = {
     ...createGlobPatternsForDependencies(__dirname),
   ],
   ...TailwindConfig,
+  theme: {
+    ...TailwindConfig.theme,
+    extend: {
+      ...TailwindConfig.theme.extend,
+      fontFamily: {
+        sans: ['var(--font-geist-sans)', ...defaultTheme.fontFamily.sans],
+        mono: ['var(--font-geist-mono)', ...defaultTheme.fontFamily.mono],
+      },
+    },
+  },
 };

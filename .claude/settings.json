@@ -19,7 +19,18 @@
       "Bash(node /Users/andredavcev/Documents/Code/ai-saas-workflow/screenshot.mjs)",
       "Bash(pkill -f \"next dev\")",
       "Bash(pkill -f \"nx dev ghost-ai\")",
-      "Bash(git check-ignore *)"
+      "Bash(git check-ignore *)",
+      "Bash(pnpm nx *)",
+      "Bash(sleep 4; cat /tmp/ghost-ai-dev.log)",
+      "Read(//private/tmp/**)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(chromium-cli --help)",
+      "Bash(node -e \"require.resolve\\('playwright'\\)\")",
+      "Bash(timeout 30 curl -sf http://localhost:3000/sign-in -o /dev/null)",
+      "Bash(node /private/tmp/claude-501/-Users-andredavcev-Documents-Code-ai-saas-workflow/2eff7722-89d1-4090-841f-4f5b000f42a8/scratchpad/screenshot.js)",
+      "Bash(curl -sf http://localhost:3000/sign-in -o /dev/null)",
+      "Bash(NODE_PATH=/Users/andredavcev/Documents/Code/ai-saas-workflow/node_modules node /private/tmp/claude-501/-Users-andredavcev-Documents-Code-ai-saas-workflow/2eff7722-89d1-4090-841f-4f5b000f42a8/scratchpad/screenshot.js)"
     ]
   },
   "enabledPlugins": {
