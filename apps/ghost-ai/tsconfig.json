@@ -49,6 +49,9 @@
     },
     {
       "path": "../../libs/ghost-ai-components"
+    },
+    {
+      "path": "../../libs/shadcn"
     }
   ]
 }

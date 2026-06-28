@@ -38,8 +38,11 @@ module.exports = {
           foreground: 'hsl(var(--card-foreground))',
         },
         // Bespoke palette (context/ui-context.md). Keys are aliased to avoid
-        // colliding with the shadcn keys above (e.g. text-primary -> copy-primary).
-        base: 'var(--bg-base)',
+        // colliding with the shadcn keys above (e.g. text-primary -> copy-primary)
+        // and with Tailwind's own scale-based utilities (e.g. "base" collides
+        // with the text-base font-size utility, which silently set the color
+        // of any text-base element to this near-black background token).
+        page: 'var(--bg-base)',
         surface: 'var(--bg-surface)',
         elevated: 'var(--bg-elevated)',
         subtle: 'var(--bg-subtle)',
