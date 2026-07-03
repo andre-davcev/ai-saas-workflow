@@ -17,6 +17,7 @@
     "strict": true,
     "target": "es2022",
     "customConditions": ["@org/source"],
+    "types": ["node"],
     "paths": {
       "@org/shadcn": ["./libs/shadcn/src/index.ts"],
       "@org/shadcn-util": ["./libs/shadcn-util/src/index.ts"]
