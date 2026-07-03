@@ -30,6 +30,7 @@
     "firsttris.vscode-jest-runner",
     "dbaeumer.vscode-eslint",
     "ms-vscode-remote.remote-ssh",
-    "ms-playwright.playwright"
+    "ms-playwright.playwright",
+    "Prisma.prisma"
   ]
 }
