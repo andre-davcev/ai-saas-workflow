@@ -17,6 +17,9 @@
     },
     {
       "path": "./libs/ghost-ai-components"
+    },
+    {
+      "path": "./libs/ghost-ai-db"
     }
   ]
 }
