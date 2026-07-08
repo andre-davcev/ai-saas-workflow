@@ -1,11 +1,11 @@
 import { PrismaPg } from '@prisma/adapter-pg';
-import { PrismaClient } from '../generated/prisma/client.js';
+import { PrismaClient } from '../generated/prisma/client';
 
 function createPrismaClient() {
   const databaseUrl = process.env.DATABASE_URL;
 
   if (databaseUrl?.startsWith('prisma+postgres://')) {
-    return new PrismaClient();
+    return new PrismaClient({ accelerateUrl: databaseUrl });
   }
 
   return new PrismaClient({

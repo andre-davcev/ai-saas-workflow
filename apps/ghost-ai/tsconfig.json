@@ -52,6 +52,9 @@
     },
     {
       "path": "../../libs/shadcn"
+    },
+    {
+      "path": "../../libs/ghost-ai-db"
     }
   ]
 }
