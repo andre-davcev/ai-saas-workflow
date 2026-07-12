@@ -1,14 +1,18 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import EditorPage from '../src/app/editor/page';
+import { EditorShell } from '../src/app/editor/editor-shell';
 
 jest.mock('@clerk/nextjs', () => ({
   UserButton: () => null,
 }));
 
-describe('EditorPage', () => {
+jest.mock('next/navigation', () => ({
+  useRouter: () => ({ push: jest.fn(), refresh: jest.fn() }),
+}));
+
+describe('EditorShell', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<EditorPage />);
+    const { baseElement } = render(<EditorShell projects={[]} />);
     expect(baseElement).toBeTruthy();
   });
 });
