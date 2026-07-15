@@ -25,7 +25,7 @@ If a change cannot be verified end to end quickly, the scope is too broad — sp
 
 - Do not invent product behavior that is not defined in the context files.
 - If a requirement is ambiguous, resolve it in the relevant context file before implementing.
-- If a requirement is missing, add it as an open question in `progress-tracker.md` before continuing.
+- If a requirement is missing, add it as an open question in `00-progress-tracker.md` before continuing.
 
 ## Protected Foundation Components
 
@@ -56,5 +56,5 @@ Progress state must reflect the actual state of the implementation, not the inte
 ## Before Moving To The Next Unit
 
 1. The current unit works end to end within its defined scope.
-2. No invariant defined in `architecture-context.md` was violated.
-3. `progress-tracker.md` reflects the completed work.
+2. No invariant defined in `03-architecture.md` was violated.
+3. `00-progress-tracker.md` reflects the completed work.

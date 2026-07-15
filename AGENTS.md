@@ -26,4 +26,4 @@
 
 Read `context/AGENTS.md` for repo configuration instructions.
 
-<!-- repo configuration start -->
+<!-- repo configuration end -->
