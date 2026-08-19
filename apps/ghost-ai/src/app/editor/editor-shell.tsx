@@ -5,7 +5,7 @@ import { type ReactNode, useState } from 'react';
 import { Plus } from 'lucide-react';
 
 import { UserButton } from '@clerk/nextjs';
-import { Button } from '@org/shadcn';
+import { Button } from '@shadcn/components';
 import {
   CreateProjectDialog,
   DeleteProjectDialog,

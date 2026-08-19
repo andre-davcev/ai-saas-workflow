@@ -13,9 +13,6 @@
       "path": "./libs/shadcn"
     },
     {
-      "path": "./libs/shadcn-util"
-    },
-    {
       "path": "./libs/ghost-ai-components"
     },
     {

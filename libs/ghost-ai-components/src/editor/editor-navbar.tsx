@@ -2,7 +2,7 @@
 
 import { PanelLeftClose, PanelLeftOpen } from 'lucide-react';
 
-import { Button } from '@org/shadcn';
+import { Button } from '@shadcn/components';
 
 export interface EditorNavbarProps {
   isSidebarOpen: boolean;

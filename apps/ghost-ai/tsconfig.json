@@ -45,9 +45,6 @@
   ],
   "references": [
     {
-      "path": "../../libs/shadcn-util"
-    },
-    {
       "path": "../../libs/ghost-ai-components"
     },
     {

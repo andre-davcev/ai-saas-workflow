@@ -19,8 +19,8 @@
     "customConditions": ["@org/source"],
     "types": ["node"],
     "paths": {
-      "@org/shadcn": ["./libs/shadcn/src/index.ts"],
-      "@org/shadcn-util": ["./libs/shadcn-util/src/index.ts"]
+      "@shadcn/components": ["./libs/shadcn/src/components/index.ts"],
+      "@shadcn/util": ["./libs/shadcn/src/util/index.ts"]
     }
   }
 }

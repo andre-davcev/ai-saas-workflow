@@ -26,4 +26,4 @@ The following apps and libraries are associated with the project.
 The following are shared libraries that are use in the project.
 
 - `libs/shadcn` - shadcn ui components.
-- `libs/shadcn-util` - shadcn components utility library.
+- `libs/shadcn/src/util` - shadcn utility helpers, shared CSS, and Tailwind configuration.

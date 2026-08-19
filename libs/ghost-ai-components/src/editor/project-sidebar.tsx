@@ -2,8 +2,8 @@
 
 import { Pencil, Plus, Trash2, X } from 'lucide-react';
 
-import { Button, Tabs, TabsContent, TabsList, TabsTrigger } from '@org/shadcn';
-import { cn } from '@org/shadcn-util';
+import { Button, Tabs, TabsContent, TabsList, TabsTrigger } from '@shadcn/components';
+import { cn } from '../../../shadcn/src/util';
 
 import type { Project } from './project';
 

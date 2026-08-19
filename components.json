@@ -3,16 +3,16 @@
   "style": "default",
   "rsc": false,
   "tailwind": {
-    "config": "libs/shadcn-util/src/tailwind.config.ts",
-    "css": "libs/shadcn-util/src/global.css",
+    "config": "libs/shadcn/src/util/tailwind.config.js",
+    "css": "libs/shadcn/src/util/global.css",
     "baseColor": "neutral",
     "cssVariables": true
   },
   "aliases": {
-    "ui": "@org/shadcn",
-    "components": "@org/shadcn/components",
-    "utils": "@org/shadcn-util",
-    "hooks": "@org/shadcn/hooks",
-    "lib": "@org/shadcn"
+    "ui": "@shadcn",
+    "components": "@shadcn/components",
+    "utils": "@shadcn/util",
+    "hooks": "@shadcn/hooks",
+    "lib": "@shadcn"
   }
 }

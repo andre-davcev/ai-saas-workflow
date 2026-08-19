@@ -9,8 +9,8 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@org/shadcn';
-import { cn } from '@org/shadcn-util';
+} from '@shadcn/components';
+import { cn } from '../../../shadcn/src/util';
 
 export interface AppDialogProps {
   open: boolean;

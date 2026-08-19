@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@org/shadcn';
+import { Button } from '@shadcn/components';
 
 import { AppDialog } from './dialog-pattern';
 

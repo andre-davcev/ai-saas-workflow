@@ -26,9 +26,16 @@
       "statusBarItem.hoverBackground": "#378de7",
       "statusBar.foreground": "#e7e7e7",
       "sash.hoverBorder": "#378de7",
-      "statusBarItem.remoteBackground": "#1973d2",
+      "statusBarItem.remoteBackground": "#f18dbe",
       "statusBarItem.remoteForeground": "#e7e7e7",
-      "commandCenter.border": "#e7e7e799"
+      "commandCenter.border": "#e7e7e799",
+      "activityBarTop.activeBackground": "#378de7",
+      "activityBarTop.background": "#378de7",
+      "activityBarTop.foreground": "#e7e7e7",
+      "activityBarTop.inactiveForeground": "#e7e7e799",
+      "commandCenter.foreground": "#e7e7e7",
+      "statusBar.debuggingBackground": "#1973d2",
+      "statusBar.debuggingForeground": "#e7e7e7"
     },
     "peacock.color": "#1973D2",
     "nxConsole.nxWorkspacePath": "frontend",

@@ -13,7 +13,8 @@ import { createGlobPatternsForDependencies } from '@nx/react/tailwind';
 import { join } from 'node:path';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
-const TailwindConfig = require('../../libs/shadcn-util/tailwind.config.js');
+const TailwindConfigModule = require('../../libs/shadcn/src/util/tailwind.config.ts');
+const TailwindConfig = TailwindConfigModule.default ?? TailwindConfigModule;
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

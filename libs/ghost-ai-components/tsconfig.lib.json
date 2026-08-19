@@ -32,9 +32,6 @@
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
   "references": [
     {
-      "path": "../shadcn-util/tsconfig.lib.json"
-    },
-    {
       "path": "../shadcn/tsconfig.lib.json"
     }
   ]
